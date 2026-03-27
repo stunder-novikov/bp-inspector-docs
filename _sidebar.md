@@ -1,0 +1,13 @@
+- [Home](/)
+- [Installation](docs/installation.md)
+- [Quick Start](docs/quickstart.md)
+- [UI Overview](docs/ui.md)
+- [Integrations](docs/integrations.md)
+- [Project Settings](docs/settings.md)
+- [CI/CD](docs/cicd.md)
+- **Rules Reference**
+  - [Code Quality](docs/rules-quality.md)
+  - [Best Practices](docs/rules-bestpractices.md)
+  - [Performance](docs/rules-performance.md)
+  - [Style & Organization](docs/rules-style.md)
+- [Custom Rules](docs/custom-rules.md)

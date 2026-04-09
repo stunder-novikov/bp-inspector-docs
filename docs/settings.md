@@ -17,6 +17,8 @@ Each entry has:
 - **bEnabled**: enable or disable the rule (default: true)
 - **Severity**: override severity: Info, Warning, or Error
 - **Thresholds**: map of threshold names to values (rule-specific)
+- **IgnoredNames**: list of exact names the rule should skip. Interpretation depends on the rule (e.g. for UnusedFunction, UnusedVariables, and UnboundDispatcher this is the set of function/variable/dispatcher names that will not be flagged). Use as an escape hatch for symbols referenced by systems the static analyzer cannot follow, such as C++ parent classes.
+- **IgnoredPrefixes**: list of name prefixes to skip. Case-insensitive. Useful for convention-based exclusions like `Internal_` or `BP_`.
 
 ### Threshold Reference
 

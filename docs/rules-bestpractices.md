@@ -60,7 +60,12 @@ The Blueprint contains SetTimer calls but no ClearTimer calls anywhere. The time
 | **Rule ID** | UnboundDispatcher |
 | **Severity** | Info |
 
-Event Dispatchers that are declared as variables but never referenced (called or bound) in any graph.
+Event Dispatchers (multicast delegate variables) that are declared but never referenced in any graph. A dispatcher counts as referenced if any graph contains a Call, Bind (Assign/AddDelegate), Unbind (RemoveDelegate), or Clear node targeting it.
+
+**Config:**
+
+- `IgnoredNames`: explicit list of dispatcher names to skip. Use for dispatchers bound from C++ parent classes.
+- `IgnoredPrefixes`: skip dispatchers whose name starts with any of these prefixes. Case-insensitive.
 
 ## Latent Action in Loop
 
